@@ -33,7 +33,7 @@ app.get('/Category', function (req, res) {
 })
 
 app.get('/TShirt', function (req, res) {
- TShirt. 
+  
  TShirt.find({},function(err,TShirt)
  {
    if(err){ res.status(500).send({error:"Couldn't get TShirts"});}else{ res.status(200).send(TShirt);}
